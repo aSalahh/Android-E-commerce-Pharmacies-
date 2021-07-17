@@ -5,7 +5,10 @@
 #### Room Database 
 #### intuit(Support different screen sizes) 
 
-
+  <p align="center">
+     <img width="450" height="450" src="https://user-images.githubusercontent.com/59257905/126047978-4d9ff98b-0184-4896-8ead-d6002d077011.jpg">   
+   <img width="450" height="450" src="https://user-images.githubusercontent.com/59257905/126047985-3554a681-41a5-4be4-81a1-f3460cb1853d.jpg">   
+  </p>
  
   <p align="center">
   <img width="450" height="450" src="https://user-images.githubusercontent.com/59257905/126047949-2e080e23-15cb-43c1-8024-f08bde9c1464.jpg">   
@@ -14,10 +17,7 @@
   
  
   
-  <p align="center">
-   <img width="450" height="450" src="https://user-images.githubusercontent.com/59257905/126047985-3554a681-41a5-4be4-81a1-f3460cb1853d.jpg">   
-    <img width="450" height="450" src="https://user-images.githubusercontent.com/59257905/126047978-4d9ff98b-0184-4896-8ead-d6002d077011.jpg">   
-  </p>
+
   
 
    <p align="center">
