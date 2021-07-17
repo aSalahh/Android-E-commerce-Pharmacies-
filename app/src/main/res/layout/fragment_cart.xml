@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/isEmpety_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/empety"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_orders"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/total"
+            android:layout_height="match_parent"
+            />
+
+        <LinearLayout
+            android:id="@+id/total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:weightSum="4"
+
+            android:layout_margin="@dimen/_5sdp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/_3sdp"
+                android:text="Total :"
+                 android:textSize="@dimen/_15sdp"
+                 android:fontFamily="@font/ubuntu_medium"
+                android:textColor="#EF576B"/>
+
+            <TextView
+android:id="@+id/total_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/_3sdp"
+                android:text="24 LE"
+                android:textSize="@dimen/_15sdp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:textColor="#04143C"/>
+
+            <ImageView
+                android:id="@+id/submit_order"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/submit_order"
+                android:layout_weight="2"/>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

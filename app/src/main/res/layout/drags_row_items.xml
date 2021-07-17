@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_130sdp"
+    android:layout_marginStart="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_8sdp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_130sdp"
+        >
+
+        <ImageView
+            android:id="@+id/drags_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_110sdp"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/pharmacy_2" />
+
+        <View
+            android:id="@+id/viewFadingEdges"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="bottom"
+            android:background="#9A2C599E"
+            app:layout_constraintBottom_toBottomOf="@id/drags_image"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </View>
+
+        <TextView
+            android:id="@+id/drags_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="Gomaa"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/viewFadingEdges"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:text="3.5 LE"
+        android:textColor="#264095"
+        android:textSize="@dimen/_10ssp" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:padding="@dimen/_5sdp"
+        android:text="syrup"
+        android:textColor="#F86565"
+        android:textSize="@dimen/_8ssp" />
+
+</androidx.cardview.widget.CardView>

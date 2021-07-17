@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#719CD3"
+        tools:context=".view.activity.ShowAllPharmacies">
+
+        <EditText
+            android:id="@+id/showAllPharmaciesEtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_margin="@dimen/_7sdp"
+            android:background="@drawable/search_bg_et"
+            android:drawableStart="@drawable/ic_search"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:hint="search"
+            android:padding="@dimen/_7sdp"
+
+            android:textColor="@color/colorPrimaryLight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/pharmacies"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:overScrollMode="never"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/showAllPharmaciesEtSearch" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

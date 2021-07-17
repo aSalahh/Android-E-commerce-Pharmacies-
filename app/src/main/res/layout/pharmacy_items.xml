@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#719CD3"
+        android:padding="@dimen/_4sdp">
+
+        <View
+            android:id="@+id/view_supporter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@id/pharmacy_details_name" />
+
+        <View
+            android:id="@+id/view_background"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/splash_bg"
+            android:paddingBottom="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="@id/pharmacy_details_name" />
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/pharmacy_details_image"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_corner_radius="@dimen/_4sdp" />
+
+        <TextView
+            android:id="@+id/pharmacy_details_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:includeFontPadding="false"
+            android:paddingTop="@dimen/_8sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/pharmacy_details_image"
+            app:layout_constraintTop_toTopOf="@id/pharmacy_details_image" />
+
+        <TextView
+            android:id="@+id/pharmacy_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:includeFontPadding="false"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:textColor="#E3E3E3"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="@id/pharmacy_details_name"
+            app:layout_constraintStart_toStartOf="@id/pharmacy_details_name"
+            app:layout_constraintTop_toBottomOf="@id/pharmacy_details_name" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

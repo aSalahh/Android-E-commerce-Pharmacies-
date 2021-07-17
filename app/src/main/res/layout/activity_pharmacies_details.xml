@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5D9DF6"
+    tools:context=".view.activity.PharmaciesDetailsActivity"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/details_imageSlider"
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_height="@dimen/_160sdp"
+                app:sliderAnimationDuration="600"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderAutoCycleEnabled="true"
+                app:sliderIndicatorAnimationDuration="600"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorMargin="@dimen/_10sdp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="1.5dp"
+                app:sliderIndicatorRadius="1.5dp"
+                app:sliderIndicatorSelectedColor="#5A5A5A"
+                app:sliderIndicatorUnselectedColor="@color/white"
+                app:sliderScrollTimeInSec="1"
+                app:sliderStartAutoCycle="true" />
+
+
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/slider_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp"
+            android:clipToPadding="false"
+            android:foregroundGravity="center_vertical"
+            android:overScrollMode="never"
+            app:layout_constraintTop_toTopOf="parent" >
+
+
+        </androidx.viewpager.widget.ViewPager>
+
+        <View
+            android:id="@+id/viewFadingEdges"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/background_fading_edge"
+            app:layout_constraintBottom_toBottomOf="@id/slider_viewPager" />
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imagePharmacy"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@id/slider_viewPager"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/slider_viewPager"
+            app:riv_corner_radius="@dimen/_6sdp" />
+
+        <TextView
+            android:id="@+id/pharmacy_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:text="android"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toEndOf="@id/imagePharmacy"
+            app:layout_constraintTop_toBottomOf="@+id/slider_viewPager" />
+
+        <ImageView
+            android:id="@+id/pharmacy_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/location"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_30sdp"
+            app:layout_constraintTop_toBottomOf="@+id/textDescription" />
+
+        <TextView
+            android:id="@+id/textDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:lineSpacingExtra="@dimen/_2sdp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintTop_toBottomOf="@+id/imagePharmacy" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</layout>

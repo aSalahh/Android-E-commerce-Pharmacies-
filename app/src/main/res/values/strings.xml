@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Talabatak</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="talabatak">Talabatak</string>
+    <string name="logo">Logo</string>
+    <string name="buy_anything">Buy Anything !</string>
+    <string name="slider_buy_anything">Buy Anything</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="don_t_have_an_account">Dont have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="signup">SignUp</string>
+    <string name="sign_in">Sign in</string>
+    <string name="already_have_an_account">Already have an account</string>
+    <string name="error_all_fildes_are_required">All fields are required.</string>
+    <string name="error_Please_enter_your_email">Please enter your Email</string>
+    <string name="error_two_password_not_matches">The two passwords must be equal.</string>
+    <string name="error_your_email_is_invalid">Your Email Id is Invalid.</string>
+    <string name="error_check_internet">Check internet connection</string>
+    <string name="wait_to_checj_info">Please wait while check your information</string>
+</resources>

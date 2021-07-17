@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+
+            <FrameLayout
+                android:id="@+id/home_cycle_activity_fl_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/activity_home_cycle_space_nav"
+       />
+
+     <com.luseen.spacenavigation.SpaceNavigationView
+         android:id="@+id/activity_home_cycle_space_nav"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_alignParentEnd="true"
+         android:layout_alignParentBottom="true"
+         android:layout_gravity="bottom"
+         android:layout_marginEnd="0dp"
+         app:active_centre_button_icon_color="@color/white"
+         app:active_item_color="@color/purple_700"
+         app:centre_button_color="#5A86E1"
+         app:active_centre_button_background_color="@color/white"
+         app:centre_button_icon="@drawable/home"
+         app:inactive_centre_button_icon_color="@color/white"
+         app:inactive_item_color="@android:color/darker_gray"
+         app:space_background_color="@color/white" />
+ </RelativeLayout>
+</layout>
